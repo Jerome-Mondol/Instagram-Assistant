@@ -82,7 +82,6 @@ celerybeat-schedule
 *.sage.py
 
 # Environments
-.env
 .venv
 env/
 venv/
@@ -104,4 +103,12 @@ venv.bak/
 .mypy_cache/
 
 # Visual Studio Code
-.vscode/
+
+# Environment variables & secrets (added by GitHub Guardian)
+*.env
+!.env.example
+!.env.sample
+.envrc
+.venv/
+config.bat
+node_modules
